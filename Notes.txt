@@ -2,12 +2,23 @@ TODO: lecuture 1 to 9 about the basics of the PHP
 
 TODO: Lecutre 10 is about sperate the code of php from html
 
-TODO: Lecture 11:  
+TODO: lecute 11: Link the Pages
+
+TODO: Lecture 12:  
 => but what if we have 20  different pages do we need to create all the pages and copy this whole code and paste all the time
 => No we do not
 => For the solution of this problem we are using partials in the PHP
 We put all the different section inside the partials and them use it wherver we want by using the require keyword
 
-TODO: lecture 12: 
+TODO: lecture 13: 
 => we ceated the view to organize the code, give the heading for dynamic content and partials for the less and organize code
 
+TODO: lecture 14: First we get the info about how the get the info about any array or string using var_dump
+=> Then we realize we need to do all the time all this process so we stored it inside the dd function and then we can use it by just caling that function
+=> Then we learn little bit about super global varibale
+==> Now, we want to change the css of the page according to which page we are
+=>  For that we get the url from server super globale varibale and then accroding to the url we change it
+=> But still we do not want to all the task for all and repeat the work again and again
+=> Then we created the function called isUrl and pass the value which accept the route in it and get rid of that problem
+==> Now, one more problemm arrives we need to pass al the function inside all the pages we have
+=> For that we created the function direrectory and use it whereever we want

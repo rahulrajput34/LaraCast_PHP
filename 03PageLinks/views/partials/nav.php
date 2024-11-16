@@ -7,9 +7,23 @@
                         </div>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
-                                <a href="/03PageLinks/index.php" class="text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                                <a href="/03PageLinks/about.php" class="bg-gray-900 text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About </a>
-                                <a href="/03PageLinks/contact.php" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                                <!-- We can also imporve this code instead of passing the all the time values over here, make it function and use it over here -->
+                                <a 
+                                href="/03PageLinks/index.php" 
+                                class=" <?= urlIs('/03PageLinks/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white rounded-md px-3 py-2 text-sm font-medium" 
+                                >
+                                    Home
+                                </a>
+                                <a href="/03PageLinks/about.php" 
+                                class=" <?= urlIs('/03PageLinks/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    About 
+                                </a>
+                                <a 
+                                href="/03PageLinks/contact.php" 
+                                class="<?= urlIs('/03PageLinks/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                                >
+                                    Contact
+                                </a>
                             </div>
                         </div>
                     </div>
