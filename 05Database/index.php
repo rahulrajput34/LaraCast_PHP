@@ -1,4 +1,5 @@
 <?php
+// TODO: making the as basic as posibble form of the database
 require __DIR__ . "/functions.php"; 
 
 // require __DIR__ . "/router.php"; 
