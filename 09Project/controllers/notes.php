@@ -1,6 +1,4 @@
 <?php
-// TODO: access the database values over here
-
 $config = require __DIR__ . '/../config.php';
 $db = new Database($config['database']);
 
