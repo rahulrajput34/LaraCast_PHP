@@ -2,7 +2,6 @@
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $queryParams = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
 
-// TODO: here we are passing the note over here but still in the url http://localhost:3000/note?id=1 we  are able to get the value because after the ? its not the part of the route
 $routes = [
     '/index.php' => '/controllers/index.php',
     '/09Project/controllers/index' => '/controllers/index.php',
@@ -12,8 +11,6 @@ $routes = [
     '/09Project/controllers/contact' => '/controllers/contact.php',
 ];
 
-// This function is the logic of the router
-// It will get the controller route and then load the accroding php controller in it
 function routeToController($uri, $routes)
 {
     if (array_key_exists($uri, $routes)) {
@@ -23,10 +20,9 @@ function routeToController($uri, $routes)
     }
 }
 
-function abort($code)
-{
+function abort($code = 404){
     http_response_code($code);
-    require __DIR__ . "/../views/{$code}.php";
+    require __DIR__ . "../views/{$code}.php";
     die();
 }
 

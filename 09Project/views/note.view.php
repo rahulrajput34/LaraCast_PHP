@@ -18,7 +18,3 @@
 <?php require __DIR__ . "/partials/footer.php";?>
 
 
-
-<!-- Here we are passing that to url id=1 -->
- <!-- But we want that id to be dinamic -->
-  <!-- That is what we did by give the php in the id -->
