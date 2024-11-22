@@ -1,9 +1,14 @@
 <?php
-// Make sure before the router the database is available to us
 require __DIR__ . "/functions.php"; 
 require __DIR__ . "/Database.php"; 
 require __DIR__ . "/Response.php";
 require __DIR__ . "/router.php"; 
+
+
+
+
+
+
 
 
 // TODO:  Full- Details about the project
@@ -18,6 +23,8 @@ require __DIR__ . "/router.php";
 // But its still  giving the 404 if I pass the abort over there and its not a good practice
 // Then I passed the 403 over there if the note is exits but created by someone else and 404 for if the note is not exit
 // Then we found that is not good practice to always get the error from the directory router so we created the response directory and pass the errors in the class base model
-
-
+// Then we started to the clean the code and make it more readable
+// first we Make the fetch and abort together
+// then we create authorize function 
+// then make fetch all method to the name get method
 

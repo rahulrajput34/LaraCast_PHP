@@ -10,3 +10,10 @@ function dd($value)
 function urlIs($value){
     return $_SERVER['REQUEST_URI'] === $value;
 }
+
+// create function authorize and give the default status code
+function authorize($condition, $status = Response::FORBIDDEN){
+    if(!$condition){
+        abort($status);
+    }
+}
