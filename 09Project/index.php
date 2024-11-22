@@ -10,7 +10,6 @@ require __DIR__ . "/router.php";
 
 
 
-
 // TODO:  Full- Details about the project
 // first we want created two table notes and users with a foreign key
 // Now we want to access that notes in our webpage
@@ -27,4 +26,8 @@ require __DIR__ . "/router.php";
 // first we Make the fetch and abort together
 // then we create authorize function 
 // then make fetch all method to the name get method
+// first we extract the routes in routes directory
+// Then we want a create note-create.php which create a new note and store it inside the database
+// For that we use the form and make it like whenever someone submit the form then store it inside the database
+// Then know about the htmlSpecialChars
 
