@@ -12,6 +12,7 @@ require __DIR__ . "/router.php";
 
 
 
+
 // TODO:  Full- Details about the project
 // first we want created two table notes and users with a foreign key
 // Now we want to access that notes in our webpage
@@ -44,4 +45,7 @@ require __DIR__ . "/router.php";
 // Now there is one more problem over here like if we wrote the 1001 word and submit it then the data is going to be gone
 // How do we prevent that
 // to prevent this we can use the $_POST['body'] ?? '' inside the textarea and save the previous info
+// Now we might need these all the functionalities somewhere else as well
+// So we make the validator class for it 
+// And then also learnt what is static method and also make a method of a email validation
 
