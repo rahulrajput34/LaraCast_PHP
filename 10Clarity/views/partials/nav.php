@@ -9,23 +9,23 @@
                             <div class="ml-10 flex items-baseline space-x-4">
                                 <!-- We can also imporve this code instead of passing the all the time values over here, make it function and use it over here -->
                                 <a 
-                                href="/10Clarity/controllers/index" 
-                                class=" <?= urlIs('/10Clarity/controllers/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white rounded-md px-3 py-2 text-sm font-medium" 
+                                href="/index" 
+                                class=" <?= urlIs('/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white rounded-md px-3 py-2 text-sm font-medium" 
                                 >
                                     Home
                                 </a>
-                                <a href="/10Clarity/controllers/about" 
-                                class=" <?= urlIs('/10Clarity/controllers/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                <a href="/about" 
+                                class=" <?= urlIs('/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
                                     About 
                                 </a>
                                 </a>
-                                <a href="/10Clarity/controllers/notes/index" 
-                                class=" <?= urlIs('/10Clarity/controllers/note/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                <a href="/notes/index" 
+                                class=" <?= urlIs('/note/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
                                     Notes 
                                 </a>
                                 <a 
-                                href="/10Clarity/controllers/contact" 
-                                class="<?= urlIs('/10Clarity/controllers/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                                href="/contact" 
+                                class="<?= urlIs('/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                                 >
                                     Contact
                                 </a>

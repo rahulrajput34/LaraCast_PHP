@@ -1,9 +1,9 @@
 <?php
-$config = require __DIR__ . '/../config.php';
+$config = require base_path('config.php');
 $db = new Database($config['database']);
 
 
-$heading = "Note";
+// $heading = "Note";
 $currentUserId = 1;
 $id = $_GET['id'] ?? null;
 
@@ -16,4 +16,9 @@ $note = $db->query('SELECT * FROM notes WHERE id = :id', [
 authorize($note['user_id'] === $currentUserId);
 
 
-require __DIR__ . "/../views/notes/show.view.php";
+// require __DIR__ . "/../../views/notes/show.view.php";
+view('notes/show.view.php',[
+    "heading" => "Note",
+    "note" => $note
+]
+);

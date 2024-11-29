@@ -1,6 +1,6 @@
-<?php require __DIR__ . "/../partials/head.php"; ?>
-<?php require __DIR__ . "/../partials/nav.php"; ?>
-<?php require __DIR__ . "/../partials/banner.php"; ?>
+<?php require base_path("/views/partials/head.php"); ?>
+<?php require base_path("/views/partials/nav.php"); ?>
+<?php require base_path("/views/partials/banner.php"); ?>
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         <form method="post" class="space-y-6">
@@ -25,9 +25,9 @@
             </div>
         </form>
     </div>
-
 </main>
-<?php require __DIR__ . "/../partials/footer.php"; ?>
+<?php require base_path("/views/partials/footer.php"); ?>
+
 
 
 <!-- Important Note: for the get request we can submit the any number of req we want for the one note but here want want to store only one note and once it stored then we want to allow user to store the another not so we do not pass the get req over here We gonna pass the post req over here -->
