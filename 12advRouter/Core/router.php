@@ -8,12 +8,9 @@ class Router
 {
 
 
-    // its not available outside of this Router class
     protected $routes = [];
 
 
-
-    // Generic method to add routes
     public function add($method, $uri, $controller)
     {
         $this->routes[] = [
@@ -27,7 +24,6 @@ class Router
 
     public function get($uri, $controller)
     {
-        // push the value into the routes
         $this->add('GET', $uri, $controller);
     }
 
@@ -60,13 +56,10 @@ class Router
     }
 
 
-
-    // function for the routes
+    
     public function route($uri, $method = 'GET')
     {
-        // Loop through the protected routes
         foreach ($this->routes as $route) {
-            // Find the path and check if it matches the requested type
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
                 return require base_path($route['controller']);
             }
@@ -76,8 +69,6 @@ class Router
 
 
 
-
-    // for abort
     protected function abort($code = 404)
     {
         http_response_code($code);

@@ -6,7 +6,6 @@
         <ul>
             <?php foreach ($notes as $note): ?>
                 <li>
-                    <!-- url to get the id of the note -->
                     <a href="/note?id=<?= $note['id']; ?>" class="text-pink-600 hover:underline">
                         <?php
                         echo htmlspecialchars($note['body']);

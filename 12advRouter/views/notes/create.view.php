@@ -3,7 +3,8 @@
 <?php require base_path("/views/partials/banner.php"); ?>
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <form method="post" class="space-y-6">
+        <!-- TODO: make it to the notes whenever the form is submitted its goes to notes url -->
+        <form method="POST" action="/notes" class="space-y-6">
             <!-- Textarea -->
             <div class="flex flex-col">
                 <label for="textarea" class="text-lg font-medium text-gray-700">Your Message</label>

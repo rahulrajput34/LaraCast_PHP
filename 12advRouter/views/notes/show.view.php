@@ -13,8 +13,6 @@
         <p>
             <?php echo htmlspecialchars($note['body']); ?>
         </p>
-        <!-- Delete a Note -->
-         <!-- TODO: we manually need to say its need the delete req because the form only knows the get req and the post req -->
         <form class="mt-8" method="POST">
             <input type="hidden" name="_method" value="DELETE" >
             <input type="hidden" name="id"  value="<?= $note['id'] ?>">
